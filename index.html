@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice Civilité</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice Civilité</title>
 </head>
+
 <body>
-  <form>
+  <form method="get" action="url">
     <fieldset>
       <legend>Informations Identité</legend>
-      <p>Nom</p>
-        <input type="text" required>
+      <label for="Nom">Nom</label><br><br>
+      <input id="Nom" type="text" required>
       <p>Prénom</p>
-        <input required type="text">
+      <input required type="text">
       <p>Adresse Mail</p>
-        <input type="email" name="Mail" id="Mail"><br>
+      <input type="Mail" placeholder="Votremail@exemple.com" name="Mail" id="Mail"><br>
       <p>Sexe</p>
       <p><input type="radio" name="size" id="size_1" value="small">
-          <label for="size_1">Homme</label></p>
+        <label for="size_1">Homme</label>
+      </p>
       <p><input type="radio" name="size" id="size_2" value="medium">
-          <label for="size_2">Femme</label></p>
+        <label for="size_2">Femme</label>
+      </p>
       <p>Adresse postale</p>
-        <input>
-<br>
+      <input type="text">
+      <br>
       <p>Code postal</p>
-        <input><br>
+      <input pattern="[0-9]{5}" maxlength="5" placeholder="Ex:59300" type="text" required><br>
       <p>Ville</p>
-        <input required type="text" name="Ville" id="Ville"><br>
+      <input type="Ville" required type="text" name="Ville" id="Ville"><br>
       <p>Métier exercé</p>
-        <input><br>
-<br>
-      <label>Date de naissance</label><br>
-        <input required type="date" name="Anniversaire" id="Anniversaire"><br>
-<br>
-      <label>Pays de naissance 
-<br>
+      <input type="text" required><br>
+      <p>CV</p>
+      <input type="file"><br>
+      <br>
+      <label for="Anniversaire">Date de naissance</label><br>
+      <input required type="date" name="Anniversaire" id="Anniversaire"><br>
+      <br>
+      <label>Pays de naissance
+        <br>
         <select name="Pays de naissance">
-        <option value="France" selected>France</option>
-        <option value="Autriche">Autriche</option>
-        <option value="Espagne">Espagne</option>
-        <option value="Allemagne">Allemagne</option></select>
+          <option value="France" selected>France</option>
+          <option value="Autriche">Autriche</option>
+          <option value="Espagne">Espagne</option>
+          <option value="Allemagne">Allemagne</option>
+        </select>
       </label>
       <p>Numéro de Sécurité Sociale</p>
-        <input><br>
+      <input><br>
       <p>Numéro de Passeport</p>
-        <input><br>
-<br>
+      <input><br>
+      <br>
       <label>Date de délivrance du Passeport</label><br>
-        <input required type="date" name="Passeport" id="Passeport"><br>
-<br>
+      <input required type="date" name="Passeport" id="Passeport"><br>
+      <br>
       <label>Date de Validité</label><br>
-        <input required type="date" name="Validité" id="Validité"><br>
-<br>
+      <input required type="date" name="Validité" id="Validité"><br>
+      <br>
+      <input type="reset" />
       <p>Envoyer</p>
-        <input type="submit" value="ici"><br>
+      <input type="submit" value="ici"><br>
     </fieldset>
   </form>
 </body>
+
 </html>
